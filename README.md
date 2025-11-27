@@ -1,6 +1,6 @@
 **SISTEM INVENTARIS ATK**
 
-Program Sistem Inventaris ATK ini merupakan aplikasi berbasis terminal untuk mengelola data inventaris, seperti nama barang, stok, harga, dan batas stok minimal. Sistem ini dirancang sederhana namun memiliki struktur yang jelas sehingga mudah dipelajari, dimodifikasi, dan digunakan sebagai contoh manajemen data menggunakan Python.
+Program Sistem Inventaris ATK ini merupakan aplikasi berbasis terminal untuk mengelola data inventaris, seperti nama barang, stok, harga, dan batas stok minimal. Sistem ini dirancang sederhana untuk memodifikasi data.
 
 **Tujuan Program**
 
@@ -13,7 +13,7 @@ Program ini dibuat untuk:
 
 **Struktur Penyimpanan Data**
 
-Data inventaris disimpan menggunakan struktur dictionary bersarang.\
+Data inventaris disimpan menggunakan struktur dictionary bersarang.
 Setiap barang memiliki tiga atribut utama:
 
 - Stok barang
@@ -104,39 +104,20 @@ Selain itu, ditampilkan:
 
 Menu ini juga memungkinkan pencarian barang tertentu berdasarkan kata kunci, menampilkan satu baris detail barang yang dicari beserta posisinya dalam tabel.
 
-**5. Keluar Program**
-
-Program berhenti dan pengguna keluar dari aplikasi.
-
-**Penjelasan Teknis**
-
-**Penggunaan Return**
-
-Return digunakan untuk mengakhiri fungsi lebih awal apabila:
-
-- Input tidak valid
-- Barang tidak ditemukan
-- Proses tidak perlu dilanjutkan
-
-Return membantu menjaga agar alur program tetap bersih dan tidak mengeksekusi kode yang tidak relevan.
-
-**Penggunaan Continue**
-
-Continue digunakan di dalam perulangan menu untuk:
-
-- Melewati proses yang tidak perlu
-- Mengulang menu tanpa keluar dari loop
-
-Penggunaan ini penting saat input tidak valid atau pengguna perlu mengulangi pilihan tanpa mengganggu logika utama.
-
-**Pencarian Barang**
+**5. Pencarian Barang**
 
 Pencarian dilakukan dengan mencocokkan kata kunci dengan nama barang.\
 Program hanya mencari pada bagian key (nama barang), bukan pada atribut di dalamnya.
 
 Hasil pencarian ditampilkan dalam format tabel untuk memudahkan identifikasi.
 
+**6. Keluar Program**
+
+Program berhenti dan pengguna keluar dari aplikasi.
+
+
+
 **Penutup**
 
-Program ini menjadi contoh lengkap bagaimana membangun sistem CRUD (Create, Read, Update, Delete) berbasis terminal dengan tambahan fitur seperti pencarian, validasi input, undo penghapusan, dan perhitungan anggaran.
+Program ini merupakan contoh bagaimana membangun sistem CRUD (Create, Read, Update, Delete) berbasis terminal dengan tambahan fitur seperti pencarian, validasi input, undo penghapusan, dan perhitungan anggaran.
 
